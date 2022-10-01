@@ -25,8 +25,11 @@ const AddUser = () => {
 
 
   const handleSubmit =()=>{
-    postEmployee()
-    postEmployeeDetails()
+    try{
+      postEmployee()
+      postEmployeeDetails()
+    }
+    catch{(console.error())}
   }
 
     return (
